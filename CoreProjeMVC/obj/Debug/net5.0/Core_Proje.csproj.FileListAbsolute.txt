@@ -161,3 +161,4 @@ C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Vi
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\TestimonialList\Default.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\SendMessage\Default.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\ContactDetails\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Default\SendMessage.cshtml.g.cs
