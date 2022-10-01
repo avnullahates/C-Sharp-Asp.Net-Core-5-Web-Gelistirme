@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OlQMXWn74+MDTxjfS44vm8QpUwx7ik4joq7hq60OgsMvCnFJLRGT+Jq1LhCLXzm/E0ZW6Idb2Ld5TiVwZy2O6w==",
+  "dgSpecHash": "DxPST7+fkSQRBjtHYzrKckWiTypdIe1Ik/U5s4se4t0HKz576TRYStruL/43TgavGzlHEVd8+2PVdYucD6blPQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\pana_\\Desktop\\Udemy\\CoreProjeMVC\\BussinesLayer\\BussinesLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\pana_\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\pana_\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\pana_\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\pana_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\pana_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\pana_\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

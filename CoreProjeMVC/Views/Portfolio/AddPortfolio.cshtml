@@ -14,20 +14,33 @@
             <br />
             @Html.Label("Proje Basligi")
             @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Name)
             <br />
             <label>Gorsel 1</label>
             @Html.TextBoxFor(x => x.ImageURL, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ImageURL)
             <br />
-          
+
             <label>Gorsel 2</label>
             @Html.TextBoxFor(x => x.ImageURL2, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ImageURL2)
             <br />
-         
+
             <label>Proje Url</label>
             @Html.TextBoxFor(x => x.ProjectURL, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.ProjectURL)
             <br />
-            
-            
+
+            <label>Fiyat</label>
+            @Html.TextBoxFor(x => x.Price, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Price)
+            <br />
+
+            <label>Tamamlanma Orani</label>
+            @Html.TextBoxFor(x => x.Value, new { @class = "form-control" })
+            @Html.ValidationMessageFor(x => x.Value)          
+          
+
             <button class="btn btn-success">Kaydet</button>
         </form>
 

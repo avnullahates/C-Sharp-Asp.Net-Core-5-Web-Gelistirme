@@ -2,7 +2,7 @@
 @model List<Portfolio>
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
 }
 
 <div class="row">
@@ -18,9 +18,10 @@
                             <th scope="col" class="sort" data-sort="name">Proje</th>
                             <th scope="col" class="sort" data-sort="budget">Ucret</th>
                             <th scope="col" class="sort" data-sort="status">Durum</th>
-                            <th scope="col">Gorseller</th>
+                            
                             <th scope="col" class="sort" data-sort="completion">Tamamlanma Orani</th>
-                            <th scope="col"></th>
+                            <th scope="col">Sil</th>
+                            <th scope="col">Duzenle</th>
                         </tr>
                     </thead>
                     <tbody class="list">
@@ -47,22 +48,7 @@
                                         <span class="status">Tamamlandı</span>
                                     </span>
                                 </td>
-                                <td>
-                                    <div class="avatar-group">
-                                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Ryan Tompson">
-                                            <img alt="Image placeholder" src="~/argon-dashboard-master/assets/img/theme/team-1.jpg">
-                                        </a>
-                                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Romina Hadid">
-                                            <img alt="Image placeholder" src="~/argon-dashboard-master/assets/img/theme/team-2.jpg">
-                                        </a>
-                                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Alexander Smith">
-                                            <img alt="Image placeholder" src="~/argon-dashboard-master/assets/img/theme/team-3.jpg">
-                                        </a>
-                                        <a href="#" class="avatar avatar-sm rounded-circle" data-toggle="tooltip" data-original-title="Jessica Doe">
-                                            <img alt="Image placeholder" src="~/argon-dashboard-master/assets/img/theme/team-4.jpg">
-                                        </a>
-                                    </div>
-                                </td>
+                           
                                 <td>
                                     <div class="d-flex align-items-center">
                                         <span class="completion mr-2">@item.Value%</span>
@@ -72,23 +58,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </td>
-                                <td class="text-right">
-                                    <div class="dropdown">
-                                        <a class="btn btn-sm btn-icon-only text-light" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </td>
+                                </td>   
+                                <td><a href="/Portfolio/DeletePortfolio/@item.PortfolioID" class="btn btn-outline-danger">Sil</a> </td>
+                                <td><a href="/Portfolio/EditPortfolio/@item.PortfolioID" class="btn btn btn-outline-success">Guncelle</a> </td>
                             </tr>
-                        }
-
-
+                            }
                     </tbody>
                 </table>
 
