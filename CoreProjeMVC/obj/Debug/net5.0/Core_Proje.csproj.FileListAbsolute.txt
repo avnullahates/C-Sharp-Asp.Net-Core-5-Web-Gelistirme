@@ -474,3 +474,6 @@ C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Vi
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Dashboard\Index.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\_NewAdminLayout.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Test\Index.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\FeatureStatistics\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\Last5Projects\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Admin\NewSideBar.cshtml.g.cs
