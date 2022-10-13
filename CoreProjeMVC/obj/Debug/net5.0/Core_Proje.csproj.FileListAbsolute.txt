@@ -477,3 +477,10 @@ C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Vi
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\FeatureStatistics\Default.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\Last5Projects\Default.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Admin\NewSideBar.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\StatisticsDashboard2\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\ProjectList\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\MessageList\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\SlideList\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\ToDoListPanel\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\VisitorMap\Default.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\_WriterLayout.cshtml.g.cs
