@@ -484,3 +484,9 @@ C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Vi
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\ToDoListPanel\Default.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\Components\VisitorMap\Default.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Shared\_WriterLayout.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Default\Index.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Default\_SideBarPartial.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Default\_NavBarPartial.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Default\HeadPartial.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Default\FooterPartial.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Default\_ScriptsPartial.cshtml.g.cs

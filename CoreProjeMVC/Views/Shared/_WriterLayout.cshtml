@@ -1,15 +1,46 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>_WriterLayout</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+
+
+@await Html.PartialAsync("/Areas/Writer/Views/Default/HeadPartial.cshtml")
 <body>
+    <div class="container-scroller">
+
+        <!-- partial:~/skydash/partials/_navbar.html -->
+        @await Html.PartialAsync("/Areas/Writer/Views/Default/_NavBarPartial.cshtml")
+
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+
+            <!-- partial:~/skydash/partials/_sidebar.html -->
+            @await Html.PartialAsync("/Areas/Writer/Views/Default/_SideBarPartial.cshtml")
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="row">
+
+                        @RenderBody()
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:~/skydash/partials/_footer.html -->
+                @await Html.PartialAsync("/Areas/Writer/Views/Default/FooterPartial.cshtml")
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    @await Html.PartialAsync("/Areas/Writer/Views/Default/_ScriptsPartial.cshtml")
+   
+
 </body>
+
 </html>
+
