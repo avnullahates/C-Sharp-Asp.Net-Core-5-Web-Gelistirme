@@ -16,5 +16,7 @@ namespace BussinesLayer.Abstract
 
         T TGetByID(int id);
 
+        List<T> TGetListbyFilter();
+
     }
 }

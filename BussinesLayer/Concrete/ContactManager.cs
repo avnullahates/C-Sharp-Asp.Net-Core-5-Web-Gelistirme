@@ -31,7 +31,7 @@ namespace BussinesLayer.Concrete
 
         public Contact TGetByID(int id)
         {
-            throw new NotImplementedException();
+            return _contactDal.GetByID(id);
         }
 
         public List<Contact> TGetList()
@@ -39,9 +39,14 @@ namespace BussinesLayer.Concrete
             return _contactDal.GetList();
         }
 
-        public void TUpdate(Contact t)
+        public List<Contact> TGetListbyFilter()
         {
             throw new NotImplementedException();
+        }
+
+        public void TUpdate(Contact t)
+        {
+            _contactDal.Update(t);
         }
     }
 }

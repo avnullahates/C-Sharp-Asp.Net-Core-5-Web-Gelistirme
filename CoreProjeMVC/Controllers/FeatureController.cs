@@ -1,6 +1,7 @@
 ﻿using BussinesLayer.Concrete;
 using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,15 +10,13 @@ using System.Threading.Tasks;
 
 namespace Core_Proje.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class FeatureController : Controller
     {
         FeatureManager featureManager = new FeatureManager( new EfFeatureDal());
         [HttpGet]
         public IActionResult Index()
-        {
-            ViewBag.v1 = "Duzenleme";
-            ViewBag.v2 = "One Cikanlar";
-            ViewBag.v3 = "One Cikan Sayfasi";
+        {            
             var values = featureManager.TGetByID(1);
             return View(values);
         }

@@ -43,6 +43,9 @@ namespace BussinesLayer.Concrete
             return _serviceDal.GetByID(id);
         }
 
-        
+        public List<Service> TGetListbyFilter()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
