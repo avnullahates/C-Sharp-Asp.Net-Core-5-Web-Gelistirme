@@ -50,7 +50,35 @@ namespace Core_Proje.Areas.Writer.Controllers
             }
 
             user.Name = p.Name;
-            user.Surname = p.Surname;
+            user.Surname = p.Surname;          
+            var result = await _userManager.UpdateAsync(user);
+
+            if (result.Succeeded)
+            {               
+                return RedirectToAction("Index", "Profile" );                
+            }
+            else
+            {
+                ViewBag.v = "Değişiklik gerçekleşmed'";
+                return View();
+            }
+           
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> PasswordChange()
+        {
+            var values = await _userManager.FindByNameAsync(User.Identity.Name);
+            UserEditViewModel model = new UserEditViewModel();
+            
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> PasswordChange(UserEditViewModel p)
+        {
+            var user = await _userManager.FindByNameAsync(User.Identity.Name);   
+       
             user.PasswordHash = _userManager.PasswordHasher.HashPassword(user, p.Password);
             var result = await _userManager.UpdateAsync(user);
 
@@ -60,5 +88,6 @@ namespace Core_Proje.Areas.Writer.Controllers
             }
             return View();
         }
+
     }
 }

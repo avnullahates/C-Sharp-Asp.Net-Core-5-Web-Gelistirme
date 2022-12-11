@@ -522,3 +522,5 @@ C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Vi
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\ErrorPage\Index.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Writeruser\Index.cshtml.g.cs
 C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\Experience2\Index.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Views\ErrorPage\Error404.cshtml.g.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\CoreProjeMVC\obj\Debug\net5.0\Razor\Areas\Writer\Views\Profile\PasswordChange.cshtml.g.cs

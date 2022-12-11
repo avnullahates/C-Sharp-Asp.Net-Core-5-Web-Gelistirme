@@ -44,17 +44,27 @@
 
             </a>
 
-        </li> 
+        </li>
         <li class="nav-item">
-            <a class="nav-link" href="/Writer/Profile/Index">
+            <a class="nav-link" href="/Writer/Profile/PasswordChange">
                 <i class="ti-settings  menu-icon"></i>
-                <span class="menu-title">Ayarlar</span>
+                <span class="menu-title">Şifre Değiştirme</span>
             </a>
         </li>
+
+        @if (User.IsInRole("Admin"))
+        {
+            <li class="nav-item">
+                <a class="nav-link" href="/Dashboard/Index">
+                    <i class="ti-layout-tab  menu-icon"></i>
+                    <span class="menu-title">Admin Paneli</span>
+                </a>
+            </li>
+        }
         <li class="nav-item">
             <a class="nav-link" href="/Writer/Login/LogOut">
                 <i class="ti-power-off menu-icon"></i>
-                <span class="menu-title">Cikis Yap</span>
+                <span class="menu-title">Cıkış Yap</span>
             </a>
         </li>
     </ul>
