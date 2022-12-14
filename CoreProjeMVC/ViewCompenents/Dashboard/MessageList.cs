@@ -14,7 +14,7 @@ namespace Core_Proje.ViewCompenents.Dashboard
         public IViewComponentResult Invoke()
         {
 
-            var values = messageManager.TGetList().Take(5).ToList();
+            var values = messageManager.TGetList().OrderByDescending(x => x.MessageID).Take(5).ToList();
             return View(values);
         }
 

@@ -20,7 +20,7 @@
                                 <th> Ünvan </th>
                                 <th> Sil </th>
                                 <th> Detaylar</th>
-                             
+
                             </tr>
                         </thead>
                         <tbody>
@@ -30,20 +30,21 @@
                                 <tr>
                                     <td>
                                         <img src="@item.ImageUrl" alt="image" />
-                                        
+
                                     </td>
                                     <td> @item.ClientName </td>
                                     <td> @item.Company </td>
                                     <td> @item.Title </td>
                                     <td> <a href="/Testimonial/DeleteTestimonial/@item.TestimonialID" class="btn btn-outline-danger"> Sil</a> </td>
                                     <td> <a href="/Testimonial/EditTestimonial/@item.TestimonialID" class="btn btn-outline-info"> Detaylar</a>  </td>
-                                    
+
                                 </tr>
                             }
 
 
                         </tbody>
                     </table>
+                    <a href="/Testimonial/AddTestimonial/" class="btn btn-outline-primary ">Yeni Referans Ekle</a>
                 </div>
             </div>
         </div>

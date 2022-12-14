@@ -121,7 +121,13 @@
 
   <ItemGroup>
     <Folder Include="Areas\Writer\Data\" />
-    <Folder Include="wwwroot\userimage\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\Template\images\favicon.ico">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

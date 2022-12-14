@@ -1,0 +1,15 @@
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\bin\Release\net5.0\EntityLayer.deps.json
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\bin\Release\net5.0\EntityLayer.runtimeconfig.json
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\bin\Release\net5.0\EntityLayer.runtimeconfig.dev.json
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\bin\Release\net5.0\EntityLayer.dll
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\bin\Release\net5.0\ref\EntityLayer.dll
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\bin\Release\net5.0\EntityLayer.pdb
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.AssemblyInfo.cs
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.dll
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\ref\EntityLayer.dll
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.pdb
+C:\Users\pana_\Desktop\Udemy\CoreProjeMVC\EntityLayer\obj\Release\net5.0\EntityLayer.genruntimeconfig.cache

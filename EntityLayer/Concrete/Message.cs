@@ -16,6 +16,8 @@ namespace EntityLayer.Concrete
 
         public string Mail { get; set; }
 
+        [Required(ErrorMessage = "Açıklama giriniz.")]
+        [MinLength(25, ErrorMessage = "Mesaj  minimum 25 karakter olmalıdır.")]
         public string Content { get; set; }
 
         public DateTime Date { get; set; }

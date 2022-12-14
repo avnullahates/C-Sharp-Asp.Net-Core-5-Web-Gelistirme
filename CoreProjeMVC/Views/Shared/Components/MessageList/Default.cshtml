@@ -5,22 +5,35 @@
         <div class="card-body">
             <div class="d-flex flex-row justify-content-between">
                 <h4 class="card-title">Mesajlar</h4>
-                <p class="text-muted mb-1 small">Tümünü Görüntüle</p>
+                <a href="/Contact/Index/"> <p class="text-muted mb-1 small">Tümünü Görüntüle</p></a>
             </div>
             @foreach (var item in Model)
             {
                 <div class="preview-list">
                     <div class="preview-item border-bottom">
                         <div class="preview-thumbnail">
-                            <img src="" alt="image" class="rounded-circle" />
+                            <img src="/userimage/user.jpeg" alt="image" class="rounded-circle" />
                         </div>
                         <div class="preview-item-content d-flex flex-grow">
                             <div class="flex-grow">
                                 <div class="d-flex d-md-block d-xl-flex justify-content-between">
                                     <h6 class="preview-subject">@item.Name</h6>
-                                    <p class="text-muted text-small">@item.Date</p>
+                                    <p class="text-muted text-small">@(((DateTime)item.Date).ToString("dd-MMM-yyyy"))</p>
                                 </div>
-                                <p class="text-muted">@item.Content.Substring(0,25)...</p>
+
+                                @if (item.Content.Length >0 && item.Content.Length <= 5)
+                                {
+                                    <p class="text-muted">@item.Content.Substring(0, 5)...</p>
+                                }                               
+                                @if (item.Content.Length >10  && item.Content.Length <=20)
+                                {
+                                    <p class="text-muted">@item.Content.Substring(0, 10)...</p>
+                                }
+                                @if (item.Content.Length >= 21)
+                                {
+                                    <p class="text-muted">@item.Content.Substring(0, 25)...</p>
+                                }
+
                             </div>
                         </div>
                     </div>
