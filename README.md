@@ -1,1 +1,1 @@
-![png](asp.net5-0.png)
+![photo](pictures/asp.net5-0.png)
