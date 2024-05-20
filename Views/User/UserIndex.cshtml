@@ -1,0 +1,53 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterUser>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Kullanıcılar</h4>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Görsel</th>
+                            <th>İsim Soyisim</th>
+                            <th>Mail</th>
+                            <th>Telefon</th>
+                            <th>Kullanıcı Adı</th>
+                            <th>Sil</th>
+                            <th>Guncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td> @item.Id </td>
+                                <td> <img src="~/userimage/@item.ImageUrl" /> </td>
+                                <td> @item.Name @item.Surname</td>
+                                <td> @item.Email </td>
+                                <td> @item.PhoneNumber </td>
+                                <td> @item.UserName </td>
+
+                                <td><a href="/User/DeleteUser/@item.Id" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/User/EditUser/@item.Id" class="btn btn-outline-success">Görüntüle</a></td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

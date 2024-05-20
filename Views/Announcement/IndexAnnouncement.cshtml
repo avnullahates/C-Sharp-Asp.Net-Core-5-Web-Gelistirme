@@ -1,0 +1,46 @@
+﻿  @using EntityLayer.Concrete
+@model List<Announcement>
+@{
+    ViewData["Title"] = "IndexAnnouncement";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Duyurular</h4>
+
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Baslik</th>
+                            <th>Tarih</th>
+                            <th>Durum</th>
+                            <th>Yazı</th>
+                            <th>Sil</th>
+                            <th>Guncelle</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@item.ID</td>
+                                <td>@item.Title</td>
+                                <td>@(((DateTime)item.Date).ToString("dd/MM/yyyy"))</td>
+                                <td>@item.Status</td>
+                                <td>@item.Content.Substring(0,10)</td>
+                                <td><a href="/Announcement/DeleteAnnouncement/@item.ID" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/Announcement/EditAnnouncement/@item.ID" class="btn btn-outline-success">Guncelle</a></td>
+
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <a href="/Announcement/AddAnnouncement/" class="btn btn-outline-primary ">Yeni Duyuru Ekle</a>
+            </div>
+        </div>
+    </div>
+</div>

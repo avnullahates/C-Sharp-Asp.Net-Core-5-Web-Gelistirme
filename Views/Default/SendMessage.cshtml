@@ -1,0 +1,74 @@
+﻿@using EntityLayer.Concrete
+@model EntityLayer.Concrete.Contact
+
+<div class="col-md-6" data-aos="zoom-in" data-aos-delay="100">
+    <div class="bg-light my-2 p-3 pt-2">
+        <form method="post" id="form">
+            <div class="form-group my-2">
+                <label for="name" class="form-label fw-bolder">Adınız</label>
+                <input class="form-control" type="text" id="Name" name="Name" required placeholder="Adınız">
+            </div>
+            <div class="form-group my-2">
+                <label for="email" class="form-label fw-bolder">Mail Adresiniz</label>
+                <input class="form-control" type="email" id="Mail" name="Mail" required placeholder="Mail adresiniz">
+            </div>
+            <div class="form-group my-2">
+                <label for="message" class="form-label fw-bolder">Mesajınız</label>
+                <textarea class="form-control" style="resize: none;" id="Content" name="Content" rows="4" required placeholder="En az 25 karakterlik mesaj yazınız"></textarea>
+            </div>
+            <input type="text" hidden value="@DateTime.Now.ToShortDateString()" name="Date">
+            <button id="btncontactadd" class="btn btn-primary mt-2" type="button">Gönder</button>
+        </form>
+    </div>
+</div>
+
+
+<script>
+
+
+    eventListeners();
+
+    function eventListeners() {
+        document.getElementById("btncontactadd").addEventListener("click", submitForm);
+    }
+
+    function submitForm(e) {
+        let values = {
+            Name: document.getElementById("Name").value,
+            Mail: document.getElementById("Mail").value,
+            Content: document.getElementById("Content").value
+        };
+        console.log(values.Content.length);
+        if (values.Content.length < 30 ) {
+            alert("En az 25 karakter giriniz");
+        }
+         
+
+        else if (values.Mail.length === 0) {
+            alert("Lutfen Mail adresi giriniz");
+        }
+        else if (Name === "Ensuecy") {
+            alert("You cannot sent message!!!");
+        }
+
+        else {
+            $.ajax({
+                type: "Post",
+                url: "/Default/Send/",
+                data: values,
+                success: function (fnk1) {
+                    let result = jQuery.parseJSON(fnk1);
+                    alert(result.Name + ", mesajınız başarılı bir şekilde gönderilmiştir.");
+                }
+            });
+        }
+
+
+
+        e.preventDefault();
+    }
+    
+</script>
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>

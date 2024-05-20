@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\pana_\Desktop\Web</_PublishTargetUrl>
+    <History>True|2024-05-20T11:56:17.7230618Z;False|2024-05-10T17:06:26.4143466+03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

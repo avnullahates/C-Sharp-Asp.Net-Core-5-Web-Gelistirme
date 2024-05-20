@@ -1,0 +1,57 @@
+﻿@model EntityLayer.Concrete.WriterUser
+@{
+    ViewData["Title"] = "EditUser";
+    Layout = "~/Views/Shared/_NewAdminLayout.cshtml";
+}
+
+@using (Html.BeginForm("EditUser", "User", FormMethod.Post))
+{
+
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+
+                <p class="card-description">  Kullanıcı Duzenleme Paneli </p>                            
+                  
+
+                    <div class="form-group">
+                        <label>Adiniz</label>
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <input type="text" asp-for="Name" class="form-control" />
+                    </div>
+                    <div class="form-group">
+                        <label>Soyadiniz</label>
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                        <input type="text" asp-for="Surname" class="form-control" />
+                    </div>
+                
+                    <div class="form-group">
+                        <label>Görsel URL</label>
+                        <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                        <input type="text" asp-for="ImageUrl" class="form-control" />
+                    </div>
+
+                   
+                    <div class="form-group">
+                        <label>Mail</label>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                        <input type="text" asp-for="Email" class="form-control" />
+                    </div>
+               
+                    <div class="form-group">
+                        <label>Telefon</label>
+                        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                        <input type="text" asp-for="PhoneNumber" class="form-control" />
+                    </div>
+               
+                    <div class="form-group">
+                        <label>Kullanıcı Adı</label>
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                        <input type="text" asp-for="UserName" class="form-control" />
+                    </div>                       
+        
+            </div>
+        </div>
+    </div>
+}
+

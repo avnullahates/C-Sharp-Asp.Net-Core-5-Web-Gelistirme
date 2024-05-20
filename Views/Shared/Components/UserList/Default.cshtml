@@ -1,0 +1,51 @@
+﻿@using EntityLayer.Concrete
+@model List<WriterUser>
+
+<div class="row ">
+    <div class="col-12 grid-margin">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Son 5 Kullanıcı</h4>
+                <div class="table-responsive">
+                    <table class="table" >
+                        <thead>
+                            <tr>
+                                <th> # </th>
+                                <th> Ana Görsel </th>
+                                <th> Ad Soyad </th>
+                                <th> Email Adres </th>
+                                <th> Telefon </th> 
+                                <th> Kullanıcı Adı </th
+                                
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            @foreach (var item in Model.OrderByDescending(x=>x.Id).Take(5).ToList())
+                            {
+                                <tr>
+                                    <td> @item.Id </td>
+                                    <td> <img src="~/userimage/@item.ImageUrl" /> </td>
+                                    <td> @item.Name @item.Surname</td>
+                                    <td> @item.Email </td>
+                                    <td> @item.PhoneNumber </td>
+                                    <td> @item.UserName </td>
+                            
+                                    <td>
+                                        <a href="/Writer/Message/SendMessage">
+                                            <div class="badge badge-outline-success">Mesaj Gönder</div>
+                                        </a>
+                                    </td>
+                                    
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
