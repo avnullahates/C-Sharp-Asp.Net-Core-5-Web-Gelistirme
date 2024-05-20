@@ -102,7 +102,7 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("EntityLayer.Concrete.Experience", b =>
                 {
-                    b.Property<int>("ExperienceID")
+                    b.Property<int>("ExprerienceID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
@@ -119,7 +119,7 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ExperienceID");
+                    b.HasKey("ExprerienceID");
 
                     b.ToTable("Experiences");
                 });
@@ -191,10 +191,10 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Image4")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImageURL")
+                    b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ImageURL2")
+                    b.Property<string>("ImageUrl2")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
@@ -206,7 +206,7 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Price")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("ProjectURL")
+                    b.Property<string>("ProjectUrl")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")

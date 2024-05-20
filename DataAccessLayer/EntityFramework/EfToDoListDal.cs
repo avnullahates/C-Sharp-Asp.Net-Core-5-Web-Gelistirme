@@ -8,10 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
-{ 
-   public class EfToDoListDal :GenericRepository<ToDoList>, IToDoListDal
+{
+    public class EfToDoListDal : GenericRepository<ToDoList>, IToDoListDal
     {
-
 
     }
 }

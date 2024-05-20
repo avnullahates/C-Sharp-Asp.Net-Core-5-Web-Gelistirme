@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-   public interface ITestimonialDal : IGenericDal<Testimonial>
+    public interface ITestimonialDal : IGenericDal<Testimonial>
     {
     }
 }
