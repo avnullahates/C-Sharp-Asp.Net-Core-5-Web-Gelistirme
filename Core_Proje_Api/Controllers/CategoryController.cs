@@ -1,5 +1,5 @@
 ﻿using Core_Proje_Api.DAL.ApiContext;
-using Core_Proje_Api.DAL.Entity;
+using Core_Proje_Api.DAL.Entitiy;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -20,18 +20,19 @@ namespace Core_Proje_Api.Controllers
             return Ok(c.Categories.ToList());
         }
 
+
         [HttpGet("{id}")]
         public IActionResult CategoryGet(int id)
         {
             using var c = new Context();
-            var value = c.Categories.Find(id);
-            if (value == null)
+            var values = c.Categories.Find(id);
+            if (values ==null)
             {
                 return NotFound();
             }
             else
             {
-                return Ok(value);
+                return Ok(values);
             }
         }
 
@@ -43,14 +44,17 @@ namespace Core_Proje_Api.Controllers
             c.SaveChanges();
             return Created("", p);
         }
+
+
         [HttpDelete]
         public IActionResult CategoryDelete(int id)
         {
             using var c = new Context();
             var value = c.Categories.Find(id);
-            if (value == null)
+            if (value==null)
             {
                 return NotFound();
+
             }
             else
             {
@@ -59,21 +63,23 @@ namespace Core_Proje_Api.Controllers
                 return NoContent();
             }
         }
+
         [HttpPut]
-        public IActionResult UpdateCategory(Category p)
+        public IActionResult CategoryUpdate(Category p)
         {
             using var c = new Context();
             var value = c.Find<Category>(p.CategoryID);
             if (value == null)
             {
                 return NotFound();
+
             }
             else
             {
                 value.CategoryName = p.CategoryName;
                 c.Update(value);
                 c.SaveChanges();
-                return NoContent();
+                return Ok(value);
             }
         }
     }

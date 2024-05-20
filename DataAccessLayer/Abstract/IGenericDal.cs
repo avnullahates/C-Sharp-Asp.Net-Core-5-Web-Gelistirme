@@ -7,13 +7,17 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IGenericDal<T> where T : class
+   public interface IGenericDal<T> where T :class
     {
+
         void Insert(T t);
         void Delete(T t);
         void Update(T t);
         List<T> GetList();
+
         T GetByID(int id);
-        List<T> GetbyFilter(Expression<Func<T, bool>> filter);
+
+        List<T> GetbyFilter(Expression<Func<T,bool>>filter);
+
     }
 }

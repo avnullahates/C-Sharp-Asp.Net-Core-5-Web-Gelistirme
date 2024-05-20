@@ -11,7 +11,9 @@ namespace EntityLayer.Concrete
     {
         [Key]
         public int ID { get; set; }
+
         public string Content { get; set; }
+
         public bool Status { get; set; }
     }
 }

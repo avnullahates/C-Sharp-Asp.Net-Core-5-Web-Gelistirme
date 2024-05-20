@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IToDoListDal : IGenericDal<ToDoList>
+    public interface IToDoListDal :IGenericDal<ToDoList>
     {
     }
 }
