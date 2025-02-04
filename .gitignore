@@ -2,3 +2,4 @@
 Core_Proje/wwwroot/skydash/
 CoreProjeMVC/wwwroot/skydash/
 Areas/Writer/Models/Mail.cs
+DataAccessLayer/Concrete/Context.cs
