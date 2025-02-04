@@ -14,7 +14,7 @@ namespace DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
            // optionsBuilder.UseSqlServer("server=31.186.11.153\\31.186.8.167; database=CoreProjeDB; user=user23; password=123456789aA***+++;");
-            optionsBuilder.UseSqlServer("Server = 31.186.11.153\\31.186.8.167, 1433; Initial Catalog = CoreProjeDB; Persist Security Info = False; User ID = user23; Password = 123456789aA***+++; MultipleActiveResultSets = False; Encrypt = False; TrustServerCertificate = False; Connection Timeout = 30; ");
+            optionsBuilder.UseSqlServer("Server = 31.186.11.153\\31.186.8.167, 1433; Initial Catalog = CoreProjeDB; Persist Security Info = False; User ID = ; Password = ; MultipleActiveResultSets = False; Encrypt = False; TrustServerCertificate = False; Connection Timeout = 30; ");
             //optionsBuilder.UseSqlServer("server=LAPTOP-FA6RBVRG\\MSSQLSERVER12; database=CoreProjeDB ; user=sa; password=123;");
         }
 
